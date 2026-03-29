@@ -95,6 +95,8 @@ fun OrderbookScreen(vm: PositionsViewModel) {
                             labelColor = TextMuted
                         ),
                         border = FilterChipDefaults.filterChipBorder(
+                            enabled = true,
+                            selected = selectedFilter == filter,
                             selectedBorderColor = Blue.copy(alpha = 0.3f),
                             borderColor = Border
                         )
