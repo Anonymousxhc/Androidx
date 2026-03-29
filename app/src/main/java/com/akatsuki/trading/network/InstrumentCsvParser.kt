@@ -35,7 +35,7 @@ class InstrumentCsvParser @Inject constructor(
     @ApplicationContext private val context: Context,
     private val client: OkHttpClient
 ) {
-    private val db = mutableMapOf<String, Map<String, TreeMap<Double, Map<String, OptionRecord>>>>()
+    private val db = mutableMapOf<String, MutableMap<String, TreeMap<Double, MutableMap<String, OptionRecord>>>>()
     private val expiryLists = mutableMapOf<String, List<ExpiryEntry>>()
 
     private val expiryFmt = SimpleDateFormat("ddMMMyy", Locale.ENGLISH)
